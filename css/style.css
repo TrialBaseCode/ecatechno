@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ---Header ---- */
+
+p, a , button, input, label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px !important;
+    font-weight: 100 !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:  sans-serif;
+}
+.navbarcontainer{
+    background-color: #63bbd0;
+    height: 45px;
+    box-shadow: 2px 2px 2px 1px #51b6d1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999999;
+}
+
+/* --------main -------- */
+.heroSection{
+    margin-top: 41px;
+}
+.heroContainer{
+    height: 100vh;
+    background-image: url('../assets/ecclipse.png'),  url('../assets/ecclipse2.png');
+    background-size: auto;
+    background-position: top, bottom;
+    background-repeat: no-repeat;
+    width:100% ;
+}
+.imageContain img{
+    filter: drop-shadow(2px 4px 6px #348af2);
+    animation: updown 2s linear alternate infinite;
+}
+@keyframes updown {
+    0%{
+       transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.aboutContainer{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(168deg, #41abc5, #6dbbcc5c);   
+}
+
+.about-com-head{
+    font-weight: 900;
+    font-stretch: condensed;
+    font-size: 55px;
+    color: #268299;
+    text-shadow: 0 3px 5px #155b6c;
+}
+
+.about-com-subhead{
+   padding-right: 44%;
+}
+
+.cardContain{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cardContain .card {
+    box-shadow: inset 5px 9px 12px 4px #15d0ff38;
+}
+.focuscardContain{
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.focuscardContain .card{
+    background-color: #97d0de;
+    border: 0;
+}
+.servicetwocontainer{
+    padding-top: 60px;
+}
+.serviceSection{
+    height: 100vh;
+    padding-top: 100px;
+}
+.servicecardworkcontain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap:7px;
+}
+.productsSection{
+    height: 100vh;
+    padding-top: 80px;
+}
+.productlistAccordian{
+    margin: 0 auto;
+    max-width: 95%;
+    padding-top: 20px;
+}
+
+.productlistAccordian .accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #63bbd0;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.productlistAccordian .carousel-indicators [data-bs-target]{
+    width: auto;
+    height: auto;
+    text-indent: unset;
+    text-transform: uppercase;
+    background-color: #63bbd0;
+    color: #fff;
+    padding: 2px 8px;
+}
+.productlistAccordian  .carousel-indicators{
+    position: unset;
+    margin: unset;
+}
+.productlistAccordian .carousel-indicators .active {
+    opacity: 1;
+    font-size: 17px !important;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+.productstwoSection{
+    padding: 0 28px;
+}
+.prodliscontainer .card {
+    background-color: #488291;
+}
+.prodliscontainer .card img{
+    filter: drop-shadow(2px 0px 2px #333);
+}
+
+.contactSection {
+    padding: 31px 27px;
+}
